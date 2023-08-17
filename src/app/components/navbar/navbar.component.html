@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <img [src]="imagePath" class="logo" />
+
+  <i class="fa-solid fa-house"></i>
+  <span class="flex-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon house-icon"
+    aria-label="Example icon-button with home icon"
+  >
+    <mat-icon>home</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon bell-icon"
+    aria-label="Example icon-button with bell icon"
+  >
+    <mat-icon>mail</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with favorite icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="options-button" [matMenuTriggerFor]="menu" *ngIf="userLoggedIn">
+    <mat-icon>person</mat-icon>
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>My Profile</button>
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+</mat-toolbar>
+
+<button mat-button (click)="toggleLoginStatus()">
+  {{ userLoggedIn ? "Logout" : "Login" }}
+</button>
