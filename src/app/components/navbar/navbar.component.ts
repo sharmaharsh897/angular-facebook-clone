@@ -15,6 +15,7 @@ export class NavbarComponent {
   
   imagePath: string= '/assets/images/logo.png'
   
+  search : String ="";
 
 
 

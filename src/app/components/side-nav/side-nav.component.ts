@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SideNavComponent {
 
+  imagePath: string= '/assets/dp.jpeg'
+  name: string="Harsh Sharma"
 }

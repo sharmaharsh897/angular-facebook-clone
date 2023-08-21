@@ -1,6 +1,10 @@
 <mat-toolbar color="primary">
   <img [src]="imagePath" class="logo" />
 
+  <span class="flex-spacer"></span>
+  <input placeholder="Search For Anything " />
+  <button mat-icon-button><mat-icon>search</mat-icon></button>
+
   <i class="fa-solid fa-house"></i>
   <span class="flex-spacer"></span>
   <button
@@ -24,7 +28,12 @@
   >
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button class="options-button" [matMenuTriggerFor]="menu" *ngIf="userLoggedIn">
+  <button
+    mat-icon-button
+    class="options-button"
+    [matMenuTriggerFor]="menu"
+    *ngIf="userLoggedIn"
+  >
     <mat-icon>person</mat-icon>
     <mat-icon>keyboard_arrow_down</mat-icon>
   </button>
@@ -34,7 +43,7 @@
     <button mat-menu-item>Logout</button>
   </mat-menu>
 </mat-toolbar>
-
+<!-- 
 <button mat-button (click)="toggleLoginStatus()">
   {{ userLoggedIn ? "Logout" : "Login" }}
-</button>
+</button> -->

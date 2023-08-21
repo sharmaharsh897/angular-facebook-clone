@@ -1,3 +1,67 @@
-<mat-sidenav-container>
-    
-</mat-sidenav-container>
+<div class="vertical-strip left-vertical-strip">
+  <!-- Content for the left vertical strip goes here -->
+
+  <!--USER NAME AND PROFILE PHOTO-->
+  <div class="user">
+    <img [src]="imagePath" />
+    <span class="username">{{ name }}</span>
+  </div>
+
+  <!-- SIDE BUTTONS -->
+  <div class="menu">
+    <div class="buttons">
+      <button mat-icon-button class="vertical-button">
+        <mat-icon>newspaper</mat-icon>
+        <span class="menu-name">News feed</span>
+      </button>
+      <button mat-icon-button class="vertical-button">
+        <mat-icon>message</mat-icon>
+        <span class="menu-name">Messenger</span>
+      </button>
+      <button mat-icon-button class="vertical-button">
+        <mat-icon>tv</mat-icon>
+        <span class="menu-name">Watch</span>
+      </button>
+      <button mat-icon-button class="vertical-button">
+        <mat-icon>store</mat-icon>
+        <span class="menu-name">Marketplace</span>
+      </button>
+    </div>
+  </div>
+
+  <!--MORE BUTTONS (SHORTCUTS)-->
+</div>
+
+<!--Center div content-->
+<div class="center-content">
+
+  
+</div>
+<!--center content ends -->
+
+<div class="vertical-strip right-vertical-strip">
+  <!-- Content for the right vertical strip goes here -->
+
+  <div class="stories">
+    <div class="titles">
+      <div class="title-left">
+        <span class="label">Stories</span>
+      </div>
+
+      <div class="title-right">
+        <span class="label"
+          ><mat-icon class="archive-story-symbol">access_time</mat-icon>
+          <a>Archive </a> &nbsp;&nbsp;· <a>&nbsp;&nbsp;Settings</a></span
+        >
+      </div>
+    </div>
+
+    <div class="add-story">
+      <div class="icon-container">
+        <mat-icon class="large-icon">add_circle_outline</mat-icon> 
+      </div>
+    </div>
+  </div>
+
+
+</div>

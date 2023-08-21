@@ -1,15 +1,167 @@
-.tp-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #eee;
- }
- .tp-section {
+.left-vertical-strip {
+  position: fixed;
+  top: 64px; /* Adjust to match the height of your navbar */
+  left: 0;
+  width: 150px; /* Adjust the width of the vertical strip */
+  height: calc(100vh - 64px); /* Adjust the height of the vertical strip */
+  background-color: #f0f0f0; /* Set the background color */
+  padding: 20px; /* Add padding as needed */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.right-vertical-strip {
+  position: fixed;
+  top: 64px; /* Adjust to match the height of your navbar */
+  right: 0;
+  width: 250px; /* Adjust the width of the vertical strip */
+  height: calc(100vh - 64px); /* Adjust the height of the vertical strip */
+  background-color: #f0f0f0; /* Set the background color */
+  padding: 20px; /* Add padding as needed */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+img {
+  height: 30px;
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+span {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.username {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-name {
+  font-weight: 100;
+  font-size: 14px;
+  &::after {
+    font-weight: bold;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  width: 200px; /* Adjust the width of the vertical strip */
+  padding: 20px; /* Add padding as needed */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 0;
+}
+
+.mat-icon-button {
+  border-radius: 0;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+    font-weight: bold;
+  }
+}
+
+.vertical-button {
+  width: 100%;
+  text-align: left;
+  border-radius: 0;
+  background-color: transparent; /* Set background color to transparent */
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+
+  &:hover {
+    /* background-color: rgba(0, 0, 0, 0.1);  */
+
+    /* Add a background color on hover */
+    font-weight: bold;
+
+    &::after {
+      content: "\2026"; /* Unicode character for ellipsis (three dots) */
+      position: absolute;
+      top: 50%; /* Vertically center the dots */
+      right: -12px; /* Position the dots to the right of the button */
+      transform: translateY(-50%);
+      font-size: 18px; /* Adjust font size as needed */
+      color: #000; /* Set color of the dots */
+      font-weight: bold;
+    }
+  }
+}
+
+.stories {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  background-color: white;
+  padding: 4px;
+  height: 150px;
+  width: auto;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.title-left {
+  float: left;
+  margin-right: 10px;
+
+  .label {
+    font-size: 14px;
+  }
+}
+
+.title-right {
+  float: right;
+  margin-left: 10px;
+
+  .label {
+    font-size: 14px;
+    float: right;
+    padding: 5px;
     display: flex;
-    align-content: center;
     align-items: center;
-    height: 60px;
-    width:100px;   
- }
+
+    a {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  .archive-story-symbol {
+    font-size: 18px;
+    
+  }
+}
+
+.add-story {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.titles{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.large-icon{
+  font-size: 42px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center; /* Center align the icon vertically */
+  /* Add any additional styling to the container if needed */
+}

@@ -22,11 +22,6 @@ mat-toolbar {
       border: none;
       width: auto;
       
-
-  
-      mat-icon {
-        margin-left: 5px;
-      }
      
     }
   
@@ -50,7 +45,14 @@ mat-toolbar {
     margin: 10px; /* Add margin as needed */
   }
   
-  .spacer {
-    flex: 1;
-  }
   
+  input{
+    width: 40%;
+    height: 25px;
+  
+    
+  }
+
+.spacer {
+  flex: 1;
+}
