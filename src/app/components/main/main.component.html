@@ -1,0 +1,75 @@
+<div class="main">
+  <div class="post">
+    <div class="container">
+      <div class="nav-section">
+        <button (click)="showTextArea()">
+          <i class="material-icons">create</i> Make Post
+        </button>
+        <!--  -->
+        <div class="vl"></div>
+        <!--  -->
+        <button (click)="showUploadButton()">
+          <i class="material-icons">photo</i> Photo/Video Album
+        </button>
+        <!--  -->
+        <div class="vl"></div>
+        <!--  -->
+        <button (click)="goLive()">
+          <i class="material-icons">camera_alt</i> Go Live
+        </button>
+      </div>
+
+      <div *ngIf="displayType === 'textarea'" class="content-section">
+        <div class="text-box">
+          <div class="user">
+            <img [src]="imagePath" />
+          </div>
+          <textarea
+            placeholder="What's on your mind, {{ getFirstName() }} ?"
+          ></textarea>
+        </div>
+      </div>
+
+      <div *ngIf="displayType === 'upload'" class="content-section">
+        <div class="upload-section">
+          <div class="user">
+            <img [src]="imagePath" />
+          </div>
+          <button (click)="uploadImage()">Choose Image</button>
+        </div>
+      </div>
+
+      <div *ngIf="displayType === 'goLive'" class="content-section">
+        <div class="live-section">
+          <div class="user">
+            <img [src]="imagePath" />
+          </div>
+          <button class="display" (click)="startLive()">Go Live</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="actions-bottom">
+        <button>
+          <i class="material-icons" style="-webkit-text-fill-color: orange"
+            >list_alt</i
+          >
+          List
+        </button>
+        <button>
+          <i class="material-icons" style="-webkit-text-fill-color: green"
+            >photo</i
+          >
+          Photo/Video
+        </button>
+        <button>
+          <i class="material-icons" style="-webkit-text-fill-color: blue"
+            >person</i
+          >
+          Friends
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

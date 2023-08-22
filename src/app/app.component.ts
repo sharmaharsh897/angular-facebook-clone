@@ -9,4 +9,6 @@ export class AppComponent {
   title = 'social-media';
 
   imagePath: any= '/src/assets/logo.png';
+  
+  name: string="Harsh Sharma"
 }

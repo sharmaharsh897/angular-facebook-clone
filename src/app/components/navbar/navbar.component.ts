@@ -14,9 +14,13 @@ export class NavbarComponent {
   }
   
   imagePath: string= '/assets/images/logo.png'
-  
+  imageDp: string='/assets/dp.jpeg'
   search : String ="";
 
+  name: string="Harsh Sharma"
 
+  getFirstName() {
+    return this.name.split(' ')[0];
+  }
 
 }
