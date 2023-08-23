@@ -6,7 +6,7 @@
     margin-right: 300px;
     align-items: center;
   } */
-
+  
   .post{
     margin: 10px;
     padding: 5px;
@@ -23,6 +23,7 @@
     width: 90%;
     margin: 20px auto;
     background-color: #fff;
+    
   }
   
   .nav-section {
@@ -35,13 +36,19 @@
    
   }
   
+  
   .nav-section button {
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-weight: bold;
     margin-right: 10px; /* Add a margin to separate the buttons */
+    color: #4867aa;
+  }
+  .nav-section button.active {
+    color: black;
   }
   
   .nav-section button i {
@@ -117,10 +124,29 @@
   right: 0;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding: 10px;
   margin-right: 10px;
   border-radius: 0 0 8px 8px; /* Add rounded corners only at the bottom */
 }
+
+.actions-bottom button{
+  background:#eff2f5;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-right: 10px; /* Add a margin to separate the buttons */
+  border-radius: 25px;
+  padding: 10px;
+  &:hover{
+    opacity:.8 ;
+  }
+
+}
+
+
 hr { 
   display: block;
   margin-top: 0.5em;
@@ -203,4 +229,22 @@ img {
 .vl {
   border-left: 1px solid rgb(46, 42, 42);
   height: 25px;
+}
+.display-live{
+  flex: 1; /* Allow the textarea to take remaining space */
+  /* border: none;
+  resize: none;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: 14px; */
+  background-color: #f44336; /* Red background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; 
+  
 }
