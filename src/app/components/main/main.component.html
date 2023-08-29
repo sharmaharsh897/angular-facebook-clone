@@ -3,7 +3,7 @@
     <div class="container">
       <div class="nav-section">
         <button (click)="showTextArea()" [ngClass]="{ 'active': activeButton === 'make-post' }">
-          <i class="material-icons">create</i> Make Post
+          <i class="material-icons">create</i> Make Post 
         </button>
         <!--  -->
         <div class="vl"></div>
@@ -19,6 +19,8 @@
         </button>
       </div>
 
+
+      
       <div *ngIf="displayType === 'textarea'" class="content-section">
         <div class="text-box">
           <div class="user">
